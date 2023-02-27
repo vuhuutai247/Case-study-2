@@ -26,1138 +26,256 @@
   </head>
   <body>
     <header>
-    <div class="Top-Header">
-        <div class="p-3 text-bg-dark">
-            <div class="container">
-              <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-                  <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+      <div class="topbar">
+        <span class=" hidden-sp hidden-xs text-d-none">Miễn phí ship với đơn hàng trên 2 triệu</span>
+    
+        <div class=" Flex-end bar ">
+    
+        <ul class=" list-unstyled">
+                
+            <li class="display-inline-block">
+              <a href=""><i class="fa fa-unlock-alt"></i> 
+               <span class="">Đăng Nhập</span></a>
+            </li>
+            <li class="display-inline-block">
+              <a  href="" ><i class="fa fa-edit "></i> Đăng Ký</a>
+            </li>
+          
+          
+          <li class=" display-inline-block ">
+            <form action="/search" method="get" class="search-bar" role="search" style="width:100%;">
+              <input type="hidden" name="type" value="product">
+              <input id="search_querry_page" class="search-box form-control" type="search" name="q" value="" placeholder="Tìm Kiếm..." aria-label="Tìm Kiếm...">
+            </form>
+          </li>
+          <li class=" Header-cart display-inline-block">
+            <div id="cart" class="blockcart_top clearfix">
+              <div class="media heading">
+                <a href="/cart" id="CartToggle" title="Giỏ Hàng">
+                  <div class="title-cart display-inline-block">
+                    Giỏ hàng
+                  </div>
+                  <div class="cart-inner media-body display-inline-block ">
+                    
+                    <span>0</span>
+                    
+                    <span">item </span>
+                  </div>
                 </a>
-        
-                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                  <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
-                  <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
-                  <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
-                  <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
-                  <li><a href="#" class="nav-link px-2 text-white">About</a></li>
-                </ul>
-        
-                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-                  <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
-                </form>
-        
-                <div class="text-end">
-                  <button type="button" class="btn btn-outline-light me-2">Login</button>
-                  <button type="button" class="btn btn-warning">Sign-up</button>
-                </div>
               </div>
             </div>
-        </div>
+          </li>
+        </ul>
+      </div>
+    </div>
 
       <div class="header-main">
         <div class="Logo-image">
-          <img src="./assets/images/ezgif-4-0f13f4f96b.jpg" alt="Logo-image" />
+          <a href=""><img src="./assets/images/ezgif-4-0f13f4f96b.jpg" alt="Logo-image" /></a>
         </div>
-        <div class="header-wrap">
-          <ul class="nav navbar-nav megamenu">
-            <li class="active">
-              <a class="" href="/" title="Trang chủ" target="_self">
-                <span class="">Trang chủ</span>
-              </a>
-            </li>
-
-            <li class="">
-              <a
-                class=""
-                href="/collections/san-pham-noi-bat/Sản-phẩm-nổi-bật"
-                title="Sản phẩm nổi bật"
-                target="_self"
-              >
-                <span class="">Sản phẩm nổi bật</span>
-              </a>
-            </li>
-
-            <li class="parent dropdown">
-              <a
-                class="dropdown-toggle has-category"
-                data-toggle="dropdown"
-                href="/collections/all"
-                title="Thương hiệu"
-                target="_self"
-              >
-                <span class="">Thương hiệu</span><b class="caret"></b>
-              </a>
-              <div class="dropdown-menu level1">
-                <div class="dropdown-menu-inner">
-                  <div class="mega-col-inner">
-                    <ul>
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/morris-motley"
-                          title="Morris Motley"
-                        >
-                          <span class="">Morris Motley</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/patricks"
-                          title="Patricks"
-                        >
-                          <span class="">Patricks</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a class="" href="/collections/olaplex" title="Olaplex">
-                          <span class="">Olaplex</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a class="" href="/collections/pacinos" title="Pacinos">
-                          <span class="">Pacinos</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/sheh-voo"
-                          title="(SHEH•VOO)"
-                        >
-                          <span class="">(SHEH•VOO)</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/moroccanoil"
-                          title="Moroccanoil"
-                        >
-                          <span class="">Moroccanoil</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/kevin-murphy"
-                          title="Kevin Murphy"
-                        >
-                          <span class="">Kevin Murphy</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/hanz-de-fuko"
-                          title="Hanz de Fuko"
-                        >
-                          <span class="">Hanz de Fuko</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a class="" href="/collections/blumaan" title="Blumaan">
-                          <span class="">Blumaan</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/tesori-d-oriente"
-                          title="Tesori d'Oriente"
-                        >
-                          <span class="">Tesori d'Oriente</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/lq-official"
-                          title="LQ Official"
-                        >
-                          <span class="">LQ Official</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/paradox-grooming"
-                          title="Paradox Grooming"
-                        >
-                          <span class="">Paradox Grooming</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a class="" href="/collections/kaaral" title="Kaaral">
-                          <span class="">Kaaral</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a class="" href="/collections/kiehl-s" title="Kiehl's">
-                          <span class="">Kiehl's</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/la-roche-posay"
-                          title="La Roche - Posay"
-                        >
-                          <span class="">La Roche - Posay</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a class="" href="/collections/tigi" title="TIGI">
-                          <span class="">TIGI</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/hair-zone"
-                          title="Hair Zone"
-                        >
-                          <span class="">Hair Zone</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/by-vilain"
-                          title="By Vilain"
-                        >
-                          <span class="">By Vilain</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/sugarbearhair"
-                          title="SugarBearHair"
-                        >
-                          <span class="">SugarBearHair</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/hair-burst"
-                          title="Hair Burst"
-                        >
-                          <span class="">Hair Burst</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/shear-revival"
-                          title="Shear Revival"
-                        >
-                          <span class="">Shear Revival</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/alaia-paris"
-                          title="Alaia Paris"
-                        >
-                          <span class="">Alaia Paris</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/al-haramain-perfumes"
-                          title="Al Haramain Perfumes"
-                        >
-                          <span class="">Al Haramain Perfumes</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a class="" href="/collections/amouage" title="Amouage">
-                          <span class="">Amouage</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a class="" href="/collections/armaf" title="Armaf">
-                          <span class="">Armaf</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a class="" href="/collections/bvlgari" title="Bvlgari">
-                          <span class="">Bvlgari</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/burberry"
-                          title="Burberry"
-                        >
-                          <span class="">Burberry</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/calvin-klein"
-                          title="Calvin Klein"
-                        >
-                          <span class="">Calvin Klein</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/carolina-herrera"
-                          title="Carolina Herrera"
-                        >
-                          <span class="">Carolina Herrera</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a class="" href="/collections/chanel" title="Chanel">
-                          <span class="">Chanel</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a class="" href="/collections/creed" title="Creed">
-                          <span class="">Creed</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a class="" href="/collections/diesel" title="Diesel">
-                          <span class="">Diesel</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a class="" href="/collections/dior" title="Dior">
-                          <span class="">Dior</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/diptyque"
-                          title="Diptyque"
-                        >
-                          <span class="">Diptyque</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/dolce-gabbana"
-                          title="Dolce &amp; Gabbana"
-                        >
-                          <span class="">Dolce &amp; Gabbana</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/editions-de-parfums-frederic-malle"
-                          title="Editions de Parfums Frederic Malle"
-                        >
-                          <span class=""
-                            >Editions de Parfums Frederic Malle</span
-                          >
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/etat-libre-d-orange"
-                          title="Etat Libre D'Orange"
-                        >
-                          <span class="">Etat Libre D'Orange</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/franck-boclet"
-                          title="Franck Boclet"
-                        >
-                          <span class="">Franck Boclet</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/giorgio-armani"
-                          title="Giorgio Armani"
-                        >
-                          <span class="">Giorgio Armani</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a class="" href="/collections/gucci" title="Gucci">
-                          <span class="">Gucci</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/guerlain"
-                          title="Guerlain"
-                        >
-                          <span class="">Guerlain</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a class="" href="/collections/hermes" title="Hermes">
-                          <span class="">Hermes</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/jean-paul-gaultier"
-                          title="Jean Paul Gaultier"
-                        >
-                          <span class="">Jean Paul Gaultier</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/jo-malone"
-                          title="Jo Malone"
-                        >
-                          <span class="">Jo Malone</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a class="" href="/collections/kenzo" title="Kenzo">
-                          <span class="">Kenzo</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a class="" href="/collections/kilian" title="Kilian">
-                          <span class="">Kilian</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a class="" href="/collections/lancome" title="Lancôme">
-                          <span class="">Lancôme</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a class="" href="/collections/le-labo" title="Le Labo">
-                          <span class="">Le Labo</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/louis-vuitton"
-                          title="Louis Vuitton"
-                        >
-                          <span class="">Louis Vuitton</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/maison-francis-kurkdjian-paris"
-                          title="Maison Francis Kurkdjian Paris"
-                        >
-                          <span class="">Maison Francis Kurkdjian Paris</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/maison-martin-margiela-paris"
-                          title="Maison Martin Margiela Paris"
-                        >
-                          <span class="">Maison Martin Margiela Paris</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a class="" href="/collections/mancera" title="Mancera">
-                          <span class="">Mancera</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/marc-jacobs"
-                          title="Marc Jacobs"
-                        >
-                          <span class="">Marc Jacobs</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/macadamia"
-                          title="Macadamia"
-                        >
-                          <span class="">Macadamia</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/montblanc"
-                          title="MontBlanc"
-                        >
-                          <span class="">MontBlanc</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a class="" href="/collections/montale" title="Montale">
-                          <span class="">Montale</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/moschino"
-                          title="Moschino"
-                        >
-                          <span class="">Moschino</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/narciso-rodriguez"
-                          title="Narciso Rodriguez"
-                        >
-                          <span class="">Narciso Rodriguez</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/nasomatto"
-                          title="Nasomatto"
-                        >
-                          <span class="">Nasomatto</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a class="" href="/collections/nautica" title="Nautica">
-                          <span class="">Nautica</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a class="" href="/collections/nishane" title="Nishane">
-                          <span class="">Nishane</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/ormonde-jayne"
-                          title="Ormonde Jayne"
-                        >
-                          <span class="">Ormonde Jayne</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/paco-rabanne"
-                          title="Paco Rabanne"
-                        >
-                          <span class="">Paco Rabanne</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/parfums-de-marly"
-                          title="Parfums de Marly"
-                        >
-                          <span class="">Parfums de Marly</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a class="" href="/collections/playboy" title="Playboy">
-                          <span class="">Playboy</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/ralph-lauren"
-                          title="Ralph Lauren"
-                        >
-                          <span class="">Ralph Lauren</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/roja-parfums"
-                          title="Roja Parfums"
-                        >
-                          <span class="">Roja Parfums</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/serge-lutens"
-                          title="Serge Lutens"
-                        >
-                          <span class="">Serge Lutens</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/tom-ford"
-                          title="Tom Ford"
-                        >
-                          <span class="">Tom Ford</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/valentino"
-                          title="Valentino"
-                        >
-                          <span class="">Valentino</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a class="" href="/collections/versace" title="Versace">
-                          <span class="">Versace</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/viktor-rolf"
-                          title="Viktor &amp; Rolf"
-                        >
-                          <span class="">Viktor &amp; Rolf</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/yves-saint-laurent"
-                          title="Yves Saint Laurent"
-                        >
-                          <span class="">Yves Saint Laurent</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </li>
-
-            <li class="parent dropdown">
-              <a
-                class="dropdown-toggle has-category"
-                data-toggle="dropdown"
-                href="/collections/all"
-                title="Sản phẩm"
-                target="_self"
-              >
-                <span class="">Sản phẩm</span><b class="caret"></b>
-              </a>
-              <div class="dropdown-menu level1">
-                <div class="dropdown-menu-inner">
-                  <div class="mega-col-inner">
-                    <ul>
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/sap-vuot-toc"
-                          title="Sáp vuốt tóc"
-                        >
-                          <span class="">Sáp vuốt tóc</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/ho-tro-tao-kieu"
-                          title="Hỗ trợ tạo kiểu"
-                        >
-                          <span class="">Hỗ trợ tạo kiểu</span>
-                        </a>
-                      </li>
-
-                      <li class="parent dropdown-submenu">
-                        <a
-                          class="dropdown-toggle"
-                          data-toggle="dropdown"
-                          href="/collections/cham-soc-toc"
-                          title="Chăm sóc Tóc"
-                        >
-                          <span class="">Chăm sóc Tóc</span
-                          ><b class="caret"></b>
-                        </a>
-                        <div class="dropdown-menu level2">
-                          <div class="dropdown-menu-inner">
-                            <div class="mega-col-inner">
-                              <ul>
-                                <li class="">
-                                  <a
-                                    class=""
-                                    href="/collections/dau-goi"
-                                    title="Dầu Gội"
-                                  >
-                                    <span class="">Dầu Gội</span>
-                                  </a>
-                                </li>
-
-                                <li class="">
-                                  <a
-                                    class=""
-                                    href="/collections/dau-xa"
-                                    title="Dầu Xả"
-                                  >
-                                    <span class="">Dầu Xả</span>
-                                  </a>
-                                </li>
-
-                                <li class="">
-                                  <a
-                                    class=""
-                                    href="/collections/tinh-dau-duong"
-                                    title="Tinh dầu Dưỡng"
-                                  >
-                                    <span class="">Tinh dầu Dưỡng</span>
-                                  </a>
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-
-                      <li class="parent dropdown-submenu">
-                        <a
-                          class="dropdown-toggle"
-                          data-toggle="dropdown"
-                          href="/collections/cham-soc-da"
-                          title="Chăm sóc Da"
-                        >
-                          <span class="">Chăm sóc Da</span><b class="caret"></b>
-                        </a>
-                        <div class="dropdown-menu level2">
-                          <div class="dropdown-menu-inner">
-                            <div class="mega-col-inner">
-                              <ul>
-                                <li class="">
-                                  <a
-                                    class=""
-                                    href="/collections/sua-tam"
-                                    title="Sữa tắm"
-                                  >
-                                    <span class="">Sữa tắm</span>
-                                  </a>
-                                </li>
-
-                                <li class="">
-                                  <a
-                                    class=""
-                                    href="/collections/tay-trang"
-                                    title="Tẩy trang"
-                                  >
-                                    <span class="">Tẩy trang</span>
-                                  </a>
-                                </li>
-
-                                <li class="">
-                                  <a
-                                    class=""
-                                    href="/collections/sua-rua-mat"
-                                    title="Sửa rửa mặt"
-                                  >
-                                    <span class="">Sửa rửa mặt</span>
-                                  </a>
-                                </li>
-
-                                <li class="">
-                                  <a
-                                    class=""
-                                    href="/collections/tay-da-chet"
-                                    title="Tẩy da chết"
-                                  >
-                                    <span class="">Tẩy da chết</span>
-                                  </a>
-                                </li>
-
-                                <li class="">
-                                  <a
-                                    class=""
-                                    href="/collections/toner"
-                                    title="Toner"
-                                  >
-                                    <span class="">Toner</span>
-                                  </a>
-                                </li>
-
-                                <li class="">
-                                  <a
-                                    class=""
-                                    href="/collections/mat-na"
-                                    title="Mặt nạ"
-                                  >
-                                    <span class="">Mặt nạ</span>
-                                  </a>
-                                </li>
-
-                                <li class="">
-                                  <a
-                                    class=""
-                                    href="/collections/duong-da"
-                                    title="Dưỡng da"
-                                  >
-                                    <span class="">Dưỡng da</span>
-                                  </a>
-                                </li>
-
-                                <li class="">
-                                  <a
-                                    class=""
-                                    href="/collections/kem-chong-nang"
-                                    title="Kem chống nắng"
-                                  >
-                                    <span class="">Kem chống nắng</span>
-                                  </a>
-                                </li>
-
-                                <li class="">
-                                  <a
-                                    class=""
-                                    href="/collections/kem-tri-mun"
-                                    title="Kem trị mụn"
-                                  >
-                                    <span class="">Kem trị mụn</span>
-                                  </a>
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/nuoc-hoa"
-                          title="Nước Hoa"
-                        >
-                          <span class="">Nước Hoa</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/nuoc-hoa-chiet"
-                          title="Nước Hoa Chiết"
-                        >
-                          <span class="">Nước Hoa Chiết</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/nuoc-hoa-nu"
-                          title="Nước Hoa Nữ"
-                        >
-                          <span class="">Nước Hoa Nữ</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a class="" href="/collections/son-moi" title="Son Môi">
-                          <span class="">Son Môi</span>
-                        </a>
-                      </li>
-
-                      <li class="parent dropdown-submenu">
-                        <a
-                          class="dropdown-toggle"
-                          data-toggle="dropdown"
-                          href="/collections/pomade-2"
-                          title="Pomade"
-                        >
-                          <span class="">Pomade</span><b class="caret"></b>
-                        </a>
-                        <div class="dropdown-menu level2">
-                          <div class="dropdown-menu-inner">
-                            <div class="mega-col-inner">
-                              <ul>
-                                <li class="">
-                                  <a
-                                    class=""
-                                    href="/collections/clay-pomade"
-                                    title="Clay Pomade"
-                                  >
-                                    <span class="">Clay Pomade</span>
-                                  </a>
-                                </li>
-
-                                <li class="">
-                                  <a
-                                    class=""
-                                    href="/collections/pomade-goc-nuoc"
-                                    title="Pomade gốc Nước"
-                                  >
-                                    <span class="">Pomade gốc Nước</span>
-                                  </a>
-                                </li>
-
-                                <li class="">
-                                  <a
-                                    class=""
-                                    href="/collections/pomade-goc-dau"
-                                    title="Pomade gốc Dầu"
-                                  >
-                                    <span class="">Pomade gốc Dầu</span>
-                                  </a>
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/xit-khu-mui"
-                          title="Xịt khử mùi"
-                        >
-                          <span class="">Xịt khử mùi</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/lan-khu-mui"
-                          title="Lăn khử mùi"
-                        >
-                          <span class="">Lăn khử mùi</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/phu-kien"
-                          title="Phụ kiện"
-                        >
-                          <span class="">Phụ kiện</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/san-pham-chiet"
-                          title="Sản phẩm chiết"
-                        >
-                          <span class="">Sản phẩm chiết</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/collections/cham-soc-rau"
-                          title="Chăm sóc Râu"
-                        >
-                          <span class="">Chăm sóc Râu</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </li>
-
-            <li class="">
-              <a
-                class=""
-                href="/collections/combo-san-pham/Combo-sản-phẩm"
-                title="Combo sản phẩm"
-                target="_self"
-              >
-                <span class="">Combo sản phẩm</span>
-              </a>
-            </li>
-
-            <li class="">
-              <a
-                class=""
-                href="/collections/san-pham-khuyen-mai"
-                title="Khuyến mãi"
-                target="_self"
-              >
-                <span class="">Khuyến mãi</span>
-              </a>
-            </li>
-
-            <li class="parent dropdown">
-              <a
-                class="dropdown-toggle has-category"
-                data-toggle="dropdown"
-                href="/blogs/media"
-                title="Media"
-                target="_self"
-              >
-                <span class="">Media</span><b class="caret"></b>
-              </a>
-              <div class="dropdown-menu level1">
-                <div class="dropdown-menu-inner">
-                  <div class="mega-col-inner">
-                    <ul>
-                      <li class="">
-                        <a class="" href="/blogs/media" title="Video Intro">
-                          <span class="">Video Intro</span>
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a
-                          class=""
-                          href="/blogs/video-review"
-                          title="Video Review"
-                        >
-                          <span class="">Video Review</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </li>
-
-            <li class="">
-              <a class="" href="/blogs/news" title="Bài viết" target="_self">
-                <span class="">Bài viết</span>
-              </a>
-            </li>
-
-            <li class="">
-              <a class="" href="/pages/lien-he" title="Liên hệ" target="_self">
-                <span class="">Liên hệ</span>
-              </a>
-            </li>
-          </ul>
-        </div>
+      <div class="Navbar-header justify-content-center">
+        <nav class="navbar navbar-expand-lg bg-white">
+          <div class="container-fluid">
+            <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active " href="#">Sản phẩm nổi bật</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Thương hiệu
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Morris Motley</a></li>
+                    <li><a class="dropdown-item" href="#">Patricks</a></li>
+                    <li><a class="dropdown-item" href="#">Olaplex</a></li>
+                    <li><a class="dropdown-item" href="#">Pacinos</a></li>
+                    <li><a class="dropdown-item" href="#">(SHEH•VOO)</a></li>
+                    <li><a class="dropdown-item" href="#">Moroccanoil</a></li>
+                    <li><a class="dropdown-item" href="#">Kevin Murphy</a></li>
+                    <li><a class="dropdown-item" href="#">Hanz de Fuko</a></li>
+                    <li><a class="dropdown-item" href="#">Blumaan</a></li>
+                    <li><a class="dropdown-item" href="#">Tesori d'Oriente</a></li>
+                    <li><a class="dropdown-item" href="#">LQ Official</a></li>
+                    <li><a class="dropdown-item" href="#">Paradox Grooming</a></li>
+                    <li><a class="dropdown-item" href="#">Kaaral</a></li>
+                    <li><a class="dropdown-item" href="#">Kiehl's</a></li>
+                    <li><a class="dropdown-item" href="#">La Roche - Posay</a></li>
+                    <li><a class="dropdown-item" href="#">TIGI</a></li>
+                    <li><a class="dropdown-item" href="#">Hair Zone</a></li>
+                    <li><a class="dropdown-item" href="#">By Vilain</a></li>
+                    <li><a class="dropdown-item" href="#">SugarBearHair</a></li>
+                    <li><a class="dropdown-item" href="#">Hair Burst</a></li>
+                    <li><a class="dropdown-item" href="#">Shear Revival</a></li>
+                    <li><a class="dropdown-item" href="#">Amouage</a></li>
+                    <li><a class="dropdown-item" href="#">Armaf</a></li>
+                    <li><a class="dropdown-item" href="#">Bvlgari</a></li>
+                    <li><a class="dropdown-item" href="#">Burberry</a></li>
+                    <li><a class="dropdown-item" href="#">Calvin Klein</a></li>
+                    <li><a class="dropdown-item" href="#">Carolina Herrera</a></li>
+                    <li><a class="dropdown-item" href="#">Chanel</a></li>
+                    <li><a class="dropdown-item" href="#">Creed</a></li>
+                    <li><a class="dropdown-item" href="#">Diesel</a></li>
+                    <li><a class="dropdown-item" href="#">Dior</a></li>
+                    <li><a class="dropdown-item" href="#">Diptyque</a></li>
+                    <li><a class="dropdown-item" href="#">Dolce & Gabbana</a></li>
+                    <li><a class="dropdown-item" href="#">Editions de Parfums Frederic Malle</a></li>
+                    <li><a class="dropdown-item" href="#">Etat Libre D'Orange</a></li>
+                    <li><a class="dropdown-item" href="#">Franck Boclet</a></li>
+                    <li><a class="dropdown-item" href="#">Giorgio Armani</a></li>
+                    <li><a class="dropdown-item" href="#">Gucci</a></li>
+                    <li><a class="dropdown-item" href="#">Guerlain</a></li>
+                    <li><a class="dropdown-item" href="#">Hermes</a></li>
+                    <li><a class="dropdown-item" href="#">Jean Paul Gaultier</a></li>
+                    <li><a class="dropdown-item" href="#">Jo Malone</a></li>
+                    <li><a class="dropdown-item" href="#">Kenzo</a></li>
+                    <li><a class="dropdown-item" href="#">Kilian</a></li>
+                    <li><a class="dropdown-item" href="#">Lancôme</a></li>
+                    <li><a class="dropdown-item" href="#">Le Labo</a></li>
+                    <li><a class="dropdown-item" href="#">Louis Vuitton</a></li>
+                    <li><a class="dropdown-item" href="#">Maison Francis Kurkdjian Paris</a></li>
+                    <li><a class="dropdown-item" href="#">Maison Martin Margiela Paris</a></li>
+                    <li><a class="dropdown-item" href="#">Mancera</a></li>
+                    <li><a class="dropdown-item" href="#">Marc Jacobs</a></li>
+                    <li><a class="dropdown-item" href="#">Macadamia</a></li>
+                    <li><a class="dropdown-item" href="#">MontBlanc</a></li>
+                    <li><a class="dropdown-item" href="#">Montale</a></li>
+                    <li><a class="dropdown-item" href="#">Moschino</a></li>
+                    <li><a class="dropdown-item" href="#">Narciso Rodriguez</a></li>
+                    <li><a class="dropdown-item" href="#">Nasomatto</a></li>
+                    <li><a class="dropdown-item" href="#">Nautica</a></li>
+                    <li><a class="dropdown-item" href="#">Nishane</a></li>
+                    <li><a class="dropdown-item" href="#">Ormonde Jayne</a></li>
+                    <li><a class="dropdown-item" href="#">Paco Rabanne</a></li>
+                    <li><a class="dropdown-item" href="#">Parfums de Marly/a></li>
+                    <li><a class="dropdown-item" href="#">Playboy</a></li>
+                    <li><a class="dropdown-item" href="#">Ralph Lauren/a></li>
+                    <li><a class="dropdown-item" href="#">Roja Parfums</a></li>
+                    <li><a class="dropdown-item" href="#">Serge Lutens</a></li>
+                    <li><a class="dropdown-item" href="#">Tom Ford</a></li>
+                    <li><a class="dropdown-item" href="#">Valentino</a></li>
+                    <li><a class="dropdown-item" href="#">Versace</a></li>
+                    <li><a class="dropdown-item" href="#">Viktor & Rolf</a></li>
+                    <li><a class="dropdown-item" href="#">Yves Saint Laurent</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Sản phẩm
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Sáp vuốt tóc</a></li>
+                    <li><a class="dropdown-item" href="#">Hỗ trợ tạo kiểu</a></li>
+                    <li><a class="dropdown-item dropdown-toggle dropdown-product" href="#">Chăm sóc Tóc</a>
+                      <ul class="dropdown-menu-child">
+                        <li>Dầu Gội</li>
+                        <li>Dầu Xả</li>
+                        <li>Tinh dầu Dưỡng</li>
+                      </ul>
+                    </li>
+                    <li><a class="dropdown-item dropdown-toggle" href="#">Chăm sóc Da</a>
+                      <ul class="dropdown-menu-child">
+                        <li>Sữa tắm</li>
+                        <li>Tẩy trang</li>
+                        <li>Tẩy da chết</li>
+                        <li>Toner</li>
+                        <li>Mặt nạ</li>
+                        <li>Dưỡng da</li>
+                        <li>Kem chống nắng</li>
+                        <li>Kem trị mụn</li>
+
+                      </ul>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Nước Hoa</a></li>
+                    <li><a class="dropdown-item" href="#">Nước Hoa Chiết</a></li>
+                    <li><a class="dropdown-item" href="#">Nước Hoa Nữ</a></li>
+                    <li><a class="dropdown-item" href="#">Son Môi</a></li>
+                    <li><a class="dropdown-item dropdown-toggle" href="#">Pomade</a>
+                      <ul class="dropdown-menu-child">
+                        <li>Clay Pomade</li>
+                        <li>Pomade gốc Nước</li>
+                        <li>Pomade gốc Dầu</li>
+                      </ul>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Xịt khử mùi</a></li>
+                    <li><a class="dropdown-item" href="#">Lăn khử mùi</a></li>
+                    <li><a class="dropdown-item" href="#">Phụ kiện</a></li>
+                    <li><a class="dropdown-item" href="#">Sản phẩm chiết</a></li>
+                    <li><a class="dropdown-item" href="#">Chăm sóc Râu</a></li>
+                   
+                  </ul>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Combo sản phẩm</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Khuyến mãi</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Media
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Video Intro</a></li>
+                    <li><a class="dropdown-item" href="#">Video Review</a></li>
+                </li>
+                
+              </ul>
+              
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Bài viết</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Liên hệ</a>
+              </li>
+              <div class="search-bar">
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Tìm Kiếm..." aria-label="Search">
+              </form>
+            </div>
+            </div>
+          </div>
+        </nav>
       </div>
-    </div>
+        
     </header>
     <main>
-        <div class="Main-slideshow">
+        <div class="Main-slideshow  m-lg-5">
             <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="./assets/images/slideshow_image_1.jpg" class="d-block w-100" alt="...">
+                    <img src="./assets/images/slideshow_image_1.jpg" class="d-block w-100 " alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="./assets/images/slideshow_image_2.jpg" class="d-block w-100" alt="...">
+                    <img src="./assets/images/slideshow_image_2.jpg" class="d-block w-100 " alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="./assets/images/slideshow_image_3.webp" class="d-block w-100" alt="...">
+                    <img src="./assets/images/slideshow_image_3.webp" class="d-block w-100 " alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="./assets/images/slideshow_image_4.webp" class="d-block w-100" alt="...">
+                    <img src="./assets/images/slideshow_image_4.webp" class="d-block w-100 " alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="./assets/images/slideshow_image_5.webp" class="d-block w-100" alt="...">
+                    <img src="./assets/images/slideshow_image_5.webp" class="d-block w-100 " alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="./assets/images/slideshow_image_6.webp" class="d-block w-100" alt="...">
+                    <img src="./assets/images/slideshow_image_6.webp" class="d-block w-100 " alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="./assets/images/slideshow_image_7.webp" class="d-block w-100" alt="...">
+                    <img src="./assets/images/slideshow_image_7.webp" class="d-block w-100 " alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="./assets/images/slideshow_image_8.webp" class="d-block w-100" alt="...">
+                    <img src="./assets/images/slideshow_image_8.webp" class="d-block w-100 " alt="...">
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -1170,21 +288,31 @@
                 </button>
               </div>
         </div>
-        <div class="Main-Banner">
-            <img src="./assets/images/home_banner.webp" alt="Main-Banner1" class="">
-            <img src="./assets/images/home_banner1.webp" alt="Main-Banner2" class="">
-            <img src="./assets/images/home_banner2.webp" alt="Main-Banner3" class="">
-            <img src="./assets/images/home_banner2_2.webp" alt="Main-Banner4" class="">
-            <img src="./assets/images/home_banner_2.webp" alt="Main-Banner5" class="">
+        <div class="Main-Banner effect ">
+          <div class="banner-left pb-4 col-6 col-md-6 col-sm-6 m-4">
+            <a href=""><img src="./assets/images/home_banner.webp" alt="Main-Banner1" class=" w-100"></a>
+          </div>
+          <div class="banner-left pb-4 col-6 col-md-6 col-sm-6 m-4">
+            <a href=""><img src="./assets/images/home_banner_2.webp" alt="Main-Banner5" class=" w-100"></a>
+          </div>
+          <div class="banner-right pb-4 col-5 col-md-5 col-sm-5 ">
+            <a href=""><img src="./assets/images/home_banner1.webp" alt="Main-Banner2" class=" w-100"></a>
+          </div>
+          <div class="banner-right pb-4 col-5 col-md-5 col-sm-5  ">
+            <a href=""><img src="./assets/images/home_banner2.webp" alt="Main-Banner3" class=" w-100"></a>
+          </div>
+          <div class="banner-left pb-4 col-6 col-md-6 col-sm-6 m-4">
+            <a href=""><img src="./assets/images/home_banner2_2.webp" alt="Main-Banner4" class="w-100"></a>
+          </div>
         </div>
 
-        <div class="Main-partner">
-            <div class="top-partner">
+        <div class="Main-partner clear-both ">
+            <div class="top-partner ">
                 <h2>
                     <span>Thương hiệu nổi bật</span>
                 </h2>
             </div>
-            <div class="Partner">
+            <div class="Partner justify-content-center">
                <div class="Partner-item"><a href=""><img src="./assets/images/partner_1.webp" alt=""></a></div>
                <div class="Partner-item"><a href=""><img src="./assets/images/partner_2.webp" alt=""></a></div>
                <div class="Partner-item"><a href=""><img src="./assets/images/partner_3.webp" alt=""></div>
@@ -1196,17 +324,17 @@
 
         <div class="Main-Product">
             <div class="Product-blog">
-                <h2>
+                <h2 class="">
                     <span>Sản Phẩm Nổi Bật</span>
                 </h2>
             </div>
 
             <div class="product-main">
-                <div class="Product-item">
+                <div class="Product-item col-3 col-sm-3 col-md-3">
                     <div class="Product-des">
-                        <div class="Product-des__Name">
-                            <a href="">
-                                <img src="./assets/images/black_yuzu_body_wash_refill_sachet_-_500ml_01_a2f9150fc97344eab6b62e796f34f715_large.webp" alt="" ><p> Túi Refill - Sữa Tắm Cao Cấp - Morris Motley - Black Yuzu Body Wash Refill Sachet Rebranding 2023 - 500ml</p>
+                        <div class="Product-des__Name text-d-none">
+                            <a href="" class="text-d-none text-color-black">
+                                <img src="./assets/images/black_yuzu_body_wash_refill_sachet_-_500ml_01_a2f9150fc97344eab6b62e796f34f715_large.webp" alt="" class="product-img" ><p> Túi Refill - Sữa Tắm Cao Cấp - Morris Motley - Black Yuzu Body Wash Refill Sachet Rebranding 2023 - 500ml</p>
                             </a>
                         </div>
                         <div class="Product-des__Money">
@@ -1216,11 +344,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="Product-item">
+                <div class="Product-item col-3 col-sm-3 col-md-3">
                     <div class="Product-des">
-                        <div class="Product-des__Name">
-                            <a href="">
-                                <img src="./assets/images/black_yuzu_body_wash_-_500ml_01_17d7985e2c15407b9d4d64a59c24aeec_large.webp" alt="" ><p> Morris Motley - Black Yuzu Body Wash Rebranding 2023 - 500ml</p>
+                        <div class="Product-des__Name ">
+                            <a href="" class="text-d-none text-color-black">
+                                <img src="./assets/images/black_yuzu_body_wash_-_500ml_01_17d7985e2c15407b9d4d64a59c24aeec_large.webp" alt="" class="product-img" ><p> Morris Motley - Black Yuzu Body Wash Rebranding 2023 - 500ml</p>
                             </a>
                         </div>
                         <div class="Product-des__Money">
@@ -1230,11 +358,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="Product-item">
+                <div class="Product-item col-3 col-sm-3 col-md-3">
                     <div class="Product-des">
-                        <div class="Product-des__Name">
-                            <a href="">
-                                <img src="./assets/images/anti-dandruff_conditioning_shampoo_refill_sachet_-_500ml_01_ccdfb668a3d14109a009d7d0e6b0bded_large.webp" alt="" ><p> Túi Refill - Sữa Tắm Tẩy Da Chết Cao Cấp - Morris Motley - Exfoliating Granule Body Wash Refill Sachet Rebranding 2023 - 500ml</p>
+                        <div class="Product-des__Name ">
+                            <a href="" class="text-d-none text-color-black">
+                                <img src="./assets/images/anti-dandruff_conditioning_shampoo_refill_sachet_-_500ml_01_ccdfb668a3d14109a009d7d0e6b0bded_large.webp" alt="" class="product-img" ><p> Túi Refill - Sữa Tắm Tẩy Da Chết Cao Cấp - Morris Motley - Exfoliating Granule Body Wash Refill Sachet Rebranding 2023 - 500ml</p>
                             </a>
                         </div>
                         <div class="Product-des__Money">
@@ -1244,11 +372,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="Product-item">
+                <div class="Product-item col-3 col-sm-3 col-md-3">
                     <div class="Product-des">
                         <div class="Product-des__Name">
-                            <a href="">
-                                <img src="./assets/images/vert_gothique_extrait_de_parfum_-_100ml_01_e946c821574948c59c34ecb2283787da_large.webp" alt="" ><p> Nước Hoa Cao Cấp - Morris Motley - Vert Gothique Extrait De Parfum Rebranding 2023 - 100ml</p>
+                            <a href="" class="text-d-none text-color-black">
+                                <img src="./assets/images/vert_gothique_extrait_de_parfum_-_100ml_01_e946c821574948c59c34ecb2283787da_large.webp" alt="" class="product-img"><p> Nước Hoa Cao Cấp - Morris Motley - Vert Gothique Extrait De Parfum Rebranding 2023 - 100ml</p>
                             </a>
                         </div>
                         <div class="Product-des__Money">
@@ -1262,16 +390,16 @@
             </div>
         </div>
 
-        <div class="Main-News">
-            <div class="News-blog">
+          <div class="Main-News">
+            <div class="News-blog ">
                 <h2>
                     <span>TIN TỨC MỚI NHẤT</span>
                 </h2>
             </div>
-
-            <div class="News-main">
-                <div class="News">
-                    <h4><a href="">Messy Short Quiff * Kiểu tóc Nam tính, dễ vuốt với...</a></h4>
+          </div>
+          <div class="News-main ">
+                <div class="News ">
+                    <h4><a href="" class="text-d-none text-color-black position-relative">Messy Short Quiff * Kiểu tóc Nam tính, dễ vuốt với...</a></h4>
                     <div class="Mail-Date">
 			
 			
@@ -1282,19 +410,20 @@
                      
                         <span class="Date">
                             <span class="icon-calendar">
-                                <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                              <i class="fa-regular fa-calendar-check"></i>
                                 <time datetime="2022-09-19">09/19/2022 07:34:49</time>
                             </span>
                         </span>
+                      </div>
                     <div class="News-image">
                         <img src="./assets/images/matte_styling_balm_rebranding_2022_-_110g_24_613a5efd23124a8eb2e1e960e3b84cf4_large.webp" alt="">
                     </div>
-                    <p>🟥 Messy Short Quiff - Kiểu tóc Nam tính, dễ vuốt với tóc màu tẩy Khói sáng!#mansstyles #zuyminh #zuyminhsalon #messyshortquiff...</p>
-                    <p><a class="link">Xem thêm</a></p>
-                </div>
+                    <p class="">🟥 Messy Short Quiff - Kiểu tóc Nam tính, dễ vuốt với tóc màu tẩy Khói sáng!#mansstyles #zuyminh #zuyminhsalon #messyshortquiff...</p>
+                    <p><a class="link text-d-none fst-italic text-color-gray">Xem thêm</a></p>
+                  </div>
 
                 <div class="News">
-                    <h4><a href="">Pre-Order is NOW * MORRIS MOTLEY - Rebranding 2022 * ...</a></h4>
+                    <h4><a href="" class="text-d-none text-color-black">Pre-Order is NOW * MORRIS MOTLEY - Rebranding 2022 * ...</a></h4>
                     <div class="Mail-Date">
 			
 			
@@ -1305,19 +434,20 @@
                      
                         <span class="Date">
                             <span class="icon-calendar">
-                                <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                              <i class="fa-regular fa-calendar-check"></i>
                                 <time datetime="2022-07-28">07/28/2022 06:22:54</time>
                             </span>
                         </span>
+                      </div>
                     <div class="News-image">
                         <img src="./assets/images/rebranding_2022_-_mm_00_e824f9753eb543ff98dd2dceba535eed_large.jpg" alt="">
                     </div>
                     <p>MORRIS MOTLEY - Rebranding 2022 * Một sự lột xác và nâng cấp toàn diện từ trong ra ngoài cho...</p>
-                    <p><a class="link">Xem thêm</a></p>
+                    <p><a class="link text-d-none fst-italic text-color-gray">Xem thêm</a></p>
                 </div>
 
                 <div class="News">
-                    <h4><a href="">Những lưu ý khi sử dụng Nước Hoa * Man's Styles...</a></h4>
+                    <h4><a href="" class="text-d-none text-color-black">Những lưu ý khi sử dụng Nước Hoa * Man's Styles...</a></h4>
                     <div class="Mail-Date">
 			
 			
@@ -1328,7 +458,7 @@
                      
                         <span class="Date">
                             <span class="icon-calendar">
-                                <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                              <i class="fa-regular fa-calendar-check"></i>
                                 <time datetime="2022-03-14">03/14/2022 10:08:38</time>
                             </span>
                         </span>
@@ -1336,11 +466,11 @@
                         <img src="./assets/images/mot_so_dieu_cam_tinh__va_de_gay_nham_lan_khi_dung_nc_hoa_01_2b3626ebf90948669d0829c951bb7765_large.webp" alt="">
                     </div>
                     <p>Nước Hoa ngày này đã dần trở thành 1 sản phẩm không thể thiếu trong tủ đồ mĩ phẩm, làm...</p>
-                    <p><a class="link">Xem thêm</a></p>
+                    <p><a class="link text-d-none fst-italic text-color-gray">Xem thêm</a></p>
                 </div>
             </div>
-
-        </div>
+          </div>
+        
 
         <div class="Main-video">
             <div class="video-blog">
@@ -1350,7 +480,7 @@
             </div>
             <div class="video-main">
                 <div class="Video">
-                    <h4><a href="">New Fresh Hair Cut with Patricks * Modern Pompadour * Zuy...</a></h4>
+                    <h4><a href="" class="text-d-none text-color-black">New Fresh Hair Cut with Patricks * Modern Pompadour * Zuy...</a></h4>
                     <div class="Mail-Date">
 			
 			
@@ -1361,18 +491,19 @@
                      
                         <span class="Date">
                             <span class="icon-calendar">
-                                <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                              <i class="fa-regular fa-calendar-check"></i>
                                 <time datetime="2022-07-28">07/28/2022 05:57:01</time>
                             </span>
                         </span>
+                        </div>
                     <div class="Video-image">
                         <img src="./assets/images/img_2645_745668eb04e6436da25e34d0dce92a6d_large.webp" alt="">
                     </div>
-                    <p>&nbsp;⬛️ New Fresh Hair Cut with Patricks - Modern Pompadour - Zuy Minh Hair Salon⬛️ PATRICKS - thương hiệu sản...</p>
-                    <p><a class="link">Xem thêm</a></p>
+                    <p>⬛️ New Fresh Hair Cut with Patricks - Modern Pompadour - Zuy Minh Hair Salon⬛️ PATRICKS - thương hiệu sản...</p>
+                    <p><a class="link text-d-none fst-italic text-color-gray">Xem thêm</a></p>
                 </div>
                 <div class="Video">
-                    <h4><a href=""> Phong Cách khi tạo kiểu tóc cho Dân Công...</a></h4>
+                    <h4><a href="" class="text-d-none text-color-black"> Phong Cách khi tạo kiểu tóc cho Dân Công...</a></h4>
                     <div class="Mail-Date">
 			
 			
@@ -1383,18 +514,19 @@
                      
                         <span class="Date">
                             <span class="icon-calendar">
-                                <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                              <i class="fa-regular fa-calendar-check"></i>
                                 <time datetime="2022-02-27">02/27/2022 09:27:51</time>
                             </span>
                         </span>
+                        </div>
                     <div class="Video-image">
                         <img src="./assets/images/anh_tieu_de_video_47_a5a46a94b2b54703866227c7e195ee4c_large.webp" alt="">
                     </div>
                     <p>Môi trường công sở luôn yêu cầu tác phong lịch sự, chỉnh chu - tuy nhiên nếu chỉ bị gò...</p>
-                    <p><a class="link">Xem thêm</a></p>
+                    <p><a class="link text-d-none fst-italic text-color-gray">Xem thêm</a></p>
                 </div>
                 <div class="Video">
-                    <h4><a href="">Thiếu Gia Hà Thành thì đi cắt tóc ở đâu???" *...</a></h4>
+                    <h4><a href="" class="text-d-none text-color-black">Thiếu Gia Hà Thành thì đi cắt tóc ở đâu???" *...</a></h4>
                     <div class="Mail-Date">
 			
 			
@@ -1405,7 +537,7 @@
                      
                         <span class="Date">
                             <span class="icon-calendar">
-                                <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                              <i class="fa-regular fa-calendar-check"></i>
                                 <time datetime="2022-01-20">01/20/2022 13:22:54</time>
                             </span>
                         </span>
@@ -1413,19 +545,538 @@
                         <img src="./assets/images/olaplex___mm_-_clip_ae_viet_nam_-_zminh___viet_-_anh_bia_clip_01_cda7d96ef39c4de59f826d1328b4f80b_large.webp" alt="">
                     </div>
                     <p>"Thiếu Gia Hà Thành thì đi cắt tóc ở đâu???" * Zuy Minh HairSalon * Địa chỉ mới * 103...</p>
-                    <p><a class="link">Xem thêm</a></p>
+                    <p><a class="link text-d-none fst-italic text-color-gray">Xem thêm</a></p>
+                    </div>
                 </div>
             </div>
-            </div>
+            <div>
 
             </div>
-        </div>
+         
+          
+
 
         <div class="Instagram">
 			<h2><span>Instagram</span></h2>
-		</div>
+		    </div>
     </main>
+    <footer>
+      <div class="Footer">
+      <div class="Information">
+        <h4 class="Information__title">Thông tin</h4>
+        <ul class="Information_main ">
+																
+          <li class="item list-style-none">
+            <a href="" class="text-d-none text-color-black">Tìm kiếm</a>
+          </li>
+          
+          <li class="item list-style-none">
+            <a href="" class="text-d-none">Giới thiệu</a>
+          </li>
+          
+          <li class="item list-style-none">
+            <a href="" class="text-d-none" >Bài Viết</a>
+          </li>
+          
+          <li class="item list-style-none">
+            <a href="" class="text-d-none">Liên Hệ</a>
+          </li>
+          
+          <li class="item list-style-none">
+            <a href="" class="text-d-none">Chính sách đổi trả</a>
+          </li>
+          
+          <li class="item list-style-none">
+            <a href="" class="text-d-none" >Phương thức thanh toán</a>
+          </li>
+          
+          <li class="item list-style-none">
+            <a href="" class="text-d-none">Chính sách vận chuyển</a>
+          </li>
+          
+          <li class="item list-style-none">
+            <a href="" class="text-d-none">Chính sách xử lý khiếu nại</a>
+          </li>
+          
+          <li class="item list-style-none">
+            <a href="" class="text-d-none">Chính sách bảo mật thông tin</a>
+          </li>
+          
 
+        </ul>
+        <ul class="list-unstyled contact list-style-none">
+          <li>
+            <i class="fa fa-home"></i> Số 13, ngõ 675 Lạc Long Quân (gần tòa chung cư Tân Hoàng Minh), quận Tây Hồ, Hà Nội
+          </li>
+          <li>
+            <i class="fa-regular fa-envelope"></i> <a href="" class="text-d-none text-color-black">mansstylesvietnam@gmail.com</a>
+          </li>
+          <li>
+            <i class="fa fa-phone"></i> 0949998487
+          </li>
+        </ul>
+      </div>
+
+      <div class="Product-Footer">
+        <h4 class="Product-Footer__title">Sản phẩm</h4>
+        <ul class=" list-group list-unstyled read-more-wrap list-style-none">
+																
+          <li class="item ">
+            <a href="" class="text-d-none">Sáp vuốt tóc</a>
+          </li>
+          
+          <li class="item ">
+            <a href="" class="text-d-none">Hỗ trợ tạo kiểu</a>
+          </li>
+          
+          <li class="item ">
+            <a href="" class="text-d-none">Chăm sóc Tóc</a>
+          </li>
+          
+          <li class="item ">
+            <a href="" class="text-d-none">Chăm sóc Da</a>
+          </li>
+          
+          <div>
+          <ul class="main-menu">
+            <li>
+              <a class="nav-link" href="#">Xem them +</a>
+              <ul class="menu-child">
+                <li class="display-inline-block">
+                  <a href="" class="text-d-none">Nước Hoa</a>
+                </li>
+                
+                <li class="display-inline-block">
+                  <a href="" class="text-d-none">Nước Hoa Chiết</a>
+                </li>
+                
+                <li class="display-inline-block">
+                  <a href="" class="text-d-none">Nước Hoa Nữ</a>
+                </li>
+                
+                <li class="display-inline-block">
+                  <a href="" class="text-d-none">Son Môi</a>
+                </li>
+                
+                <li class="display-inline-block">
+                  <a href="" class="text-d-none">Pomade</a>
+                </li>
+                
+                <li class="display-inline-block">
+                  <a href="" class="text-d-none">Xịt khử mùi</a>
+                </li>
+                
+                <li class="display-inline-block">
+                  <a href="" class="text-d-none">Lăn khử mùi</a>
+                </li>
+                
+                <li class="display-inline-block">
+                  <a href="" class="text-d-none">Phụ kiện</a>
+                </li>
+                
+                <li class="display-inline-block">
+                  <a href="" class="text-d-none">Sản phẩm chiết</a>
+                </li>
+                
+                <li class="display-inline-block">
+                  <a href="" class="text-d-none">Chăm sóc Râu</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          </div>
+          
+          
+        </ul>
+        
+      </div>
+
+      <div class="Trademark-footer">
+        <h4 class="Trademark-footer__title">Thương hiệu</h4>
+        <ul class="toggle-footer list-group list-unstyled read-more-wrap list-style-none">
+																	 
+          <li class="item ">
+            <a href="" class="text-d-none">Morris Motley</a>
+          </li>
+          
+          <li class="item ">
+            <a href="" class="text-d-none">Patricks</a>
+          </li>
+          
+          <li class="item ">
+            <a href="" class="text-d-none">Olaplex</a>
+          </li>
+          
+          <li class="item ">
+            <a href="" class="text-d-none">Pacinos</a>
+          </li>
+          
+          <div>
+            <ul class="main-menu">
+              <li>
+                <a class="nav-link" href="#">Xem them +</a>
+                <ul class="menu-child">
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">(SHEH•VOO)</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Moroccanoil</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Kevin Murphy</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Hanz de Fuko</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Blumaan</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Tesori d'Oriente</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">LQ Official</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Paradox Grooming</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Kaaral</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Kiehl's</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">La Roche - Posay</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">TIGI</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Hair Zone</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">By Vilain</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">SugarBearHair</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Hair Burst</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Shear Revival</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Alaia Paris</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Al Haramain Perfumes</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Amouage</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Armaf</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Bvlgari</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Burberry</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Calvin Klein</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Carolina Herrera</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Chanel</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Creed</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Diesel</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Dior</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Diptyque</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Dolce & Gabbana</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Editions de Parfums Frederic Malle</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Etat Libre D'Orange</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Franck Boclet</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Giorgio Armani</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Gucci</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Guerlain</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Hermes</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Jean Paul Gaultier</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Jo Malone</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Kenzo</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Kilian</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Lancôme</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Le Labo</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Louis Vuitton</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Maison Francis Kurkdjian Paris</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Maison Martin Margiela Paris</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Mancera</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none"> Marc Jacobs</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Macadamia</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">MontBlanc</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Montale</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Moschino</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Narciso Rodriguez</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Nasomatto</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Nautica</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Nishane</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Ormonde Jayne</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Paco Rabanne</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Parfums de Marly</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Playboy</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Ralph Lauren</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Roja Parfums</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Serge Lutens</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Tom Ford</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Valentino</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Versace</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Viktor & Rolf</a>
+                  </li>
+                  
+                  <li class="item read-more-target">
+                    <a href="" class="text-d-none">Yves Saint Laurent</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            </div>
+          
+          
+
+        </ul>
+        <label for="menu-1" class="read-more-trigger"></label>
+
+      </div>
     
+      <div class="News-footer">
+        <h4 class="News-footer__title">
+          Bản Tin
+        </h4>
+        <div class="News-footer__des">
+          Bạn có muốn là người đầu tiên trong số bạn bè của ban. Nhận được những thông tin mới nhất từ Man's Styles
+        </div>
+        <form class="News-footer__form" target="_blank">
+          <input type="email" placeholder="Nhập vào email của bạn ..." name="EMAIL" id="mail" class="newsletter-input form-control" >
+          <button id="subscribe" class="News-footer__btn " type="submit">
+              <span>Subscribe →</span>
+          </button>
+      </form>
+
+      <div class="News-footer__social">
+    
+        <div class="">        
+            <ul class="">
+                
+                    <li class="facebook display-inline-block p-right-25px">
+                        <a href="" title="Man's Styles on Facebook" class="btn-tooltip ">
+                          <i class="fa-brands fa-facebook" ></i>
+                            
+                        </a>
+                    </li>
+                
+                
+                
+                    <li class="instagram display-inline-block p-right-25px">
+                        <a href="" class="btn-tooltip">
+                          <i class="fa-brands fa-instagram"></i>
+                            
+                        </a>
+                    </li>
+                
+                
+                
+                    <li class="youtube display-inline-block p-right-25px">
+                        <a href="" title="Man's Styles on Youtube" class="btn-tooltip">
+                          <i class="fa-brands fa-youtube"></i>
+                            
+                        </a>
+                    </li>
+                
+                
+                    <li class="google-plus display-inline-block p-right-25px">
+                        <a href="" class="btn-tooltip">
+                          <i class="fa-brands fa-google-plus-g"></i>
+                            
+                        </a>
+                    </li>
+                
+                
+                    <li class="twitter display-inline-block p-right-25px">
+                        <a href="" class="btn-tooltip">
+                          <i class="fa-brands fa-twitter"></i>
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+      </div>
+      </div>
+    </div>
+
+      <div class="Footer-end">
+        <a href="">
+          <img src="./assets/images/image_powered.png" alt="" >
+        </a>
+      </div>
+    
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   </body>
 </html>
